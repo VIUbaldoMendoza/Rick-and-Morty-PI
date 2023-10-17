@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend server for web application",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VIUbaldoMendoza/Rick-and-Morty-PI.git"
+  },
+  "keywords": [
+    "servidor",
+    "backend"
+  ],
+  "author": "Viridiana Ubaldo Mendoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VIUbaldoMendoza/Rick-and-Morty-PI/issues"
+  },
+  "homepage": "https://github.com/VIUbaldoMendoza/Rick-and-Morty-PI#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
