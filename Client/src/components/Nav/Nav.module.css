@@ -1,0 +1,53 @@
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00ff00;
+  padding: 20px;
+  color: white;
+
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.navLink:hover {
+  color: #ff00ff;
+}
+
+.searchContainer {
+  margin-right: 10px;
+}
+
+.randomButton {
+  background-color: black;
+  color: #00ff00;
+  border: none;
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLink {
+    margin: 10px 0;
+  }
+
+  .searchContainer {
+    margin: 10px 0;
+  }
+
+  .randomButton {
+    margin: 10px 0;
+  }
+}
+

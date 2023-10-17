@@ -1,0 +1,23 @@
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    color: #00ff00;
+    background-color: black;
+    border: none;
+    margin-right: 2px;
+  }
+  
+  .addButton {
+    background-color: black;
+    color: #00ff00;
+    border: none;
+  }
+
+  .addButton:hover {
+    background-color: #ff00ff;
+  }
+
+  

@@ -1,0 +1,38 @@
+/* Estilos para el contenedor principal del detalle */
+.detailContainer {
+    padding: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para el nombre del personaje */
+  .detailName {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff00ff;
+  }
+  
+  /* Estilos para las propiedades del personaje */
+  .detailProperty {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ff00ff;
+  }
+  
+  /* Estilos para la imagen del personaje */
+  .detailImage {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el mensaje de carga */
+  .loadingMessage {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
