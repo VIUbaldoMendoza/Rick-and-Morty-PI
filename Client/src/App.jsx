@@ -34,7 +34,8 @@ function App() {
    
    const onSearch = (id) => {
       axios
-      .get(`https://rickandmortyapi.com/api/character/${id}`)
+      .get(`http://localhost:3001/rickandmorty/character/${id}`)
+      //(`https://rickandmortyapi.com/api/character/${id}`)
       .then(({ data }) => {
          if (data.name) {
             const isDuplicate = characters.some((char) => char.id === data.id);

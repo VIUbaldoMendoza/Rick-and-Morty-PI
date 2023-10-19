@@ -1,6 +1,4 @@
-/* Estilos para el contenedor principal del componente "Card" */
 .cardContainer {  
-  border: 2px solid #00ff00;
   padding: 10px;
   margin: 10px;
   background-color: white;
@@ -9,8 +7,31 @@
   align-items: center;
   position: relative;
   color: black;
-  border-radius:10px;
-  
+  text-align: center;
+  border: 5px solid transparent;
+  background-clip: padding-box;
+  animation: gradient-animation 3s infinite;
+  border-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff) 1;
+  border-image-slice: 1;
+
+}
+
+@keyframes gradient-animation {
+  0% {
+    border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(135deg, #ff00ff, #00ffff, #ffff00);
+  }
+  50% {
+    border-image-source: linear-gradient(225deg, #00ffff, #ff00ff, #ffff00);
+  }
+  75% {
+    border-image-source: linear-gradient(315deg, #ffff00, #ff00ff, #00ffff);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  }
 }
 
 .cardNameLink {
