@@ -18,20 +18,31 @@ function App() {
    const {pathname} = useLocation()
    const navigate = useNavigate()
 
-   const [access, setAcces] = useState(false)
-   const email = 'viri@gmail.com'
-   const password = '12345'
+   const [access, setAccess] = useState(false);
 
-   const login = (userData) => {
-      if (userData.email === email && userData.password === password) {
-         setAcces(true)
-         navigate('/home')
-      } else {
-         alert("usuario o contraseña incorrectos")
-      }
-   
+   //const email = 'viri@gmail.com'
+   //const password = '12345'
+
+   function login(userData) {
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+      axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+         const { access } = data;
+         setAccess(data);
+         access && navigate('/home');
+      });
    }
+
+   //const login = (userData) => {
+   //   if (userData.email === email && userData.password === password) {
+   //      setAcces(true)
+   //      navigate('/home')
+   //   } else {
+   //      alert("usuario o contraseña incorrectos")
+   //   }
    
+   //
+
    const onSearch = (id) => {
       axios
       .get(`http://localhost:3001/rickandmorty/character/${id}`)
