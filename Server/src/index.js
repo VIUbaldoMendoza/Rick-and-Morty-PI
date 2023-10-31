@@ -1,8 +1,14 @@
-const express = require('express');
+const server = require('./app');
+const PORT = 3001;
+
+server.listen(PORT, () => {
+    console.log('Server raised in port: ' + PORT);
+});
+/*const express= require('express');
 const router = require('./routes/index');
 
 const server = express();
-const PORT = 3001;
+
 
 server.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -19,12 +25,8 @@ server.use((req, res, next) => {
  });
  
 server.use(express.json());
-server.use('/rickandmorty', router);
+server.use('/rickandmorty', router);*/
 
-server.listen(PORT, () => {
-    console.log(`Server running into ${PORT} Port`);
-    //console.log('Server raised in port: ' + PORT);
-});
 
 
 //console.log(`Server running into ${PORT} Port`)  sustituir si console.log('Server raised in port: ' + PORT); no funciona

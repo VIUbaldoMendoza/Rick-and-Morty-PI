@@ -83,8 +83,9 @@
 /* Card.module.css */
 
 .favoriteButton {
-  background-color: black;
+  background-color: #ff00ff;
   color: white;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
   font-size: 20px;
