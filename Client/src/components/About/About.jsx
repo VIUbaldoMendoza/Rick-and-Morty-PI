@@ -1,14 +1,14 @@
-import styles from './About.module.css'; // importa los estilos CSS del archivo "About.module.css"
+import styles from './About.module.css'; 
 
-const About = () => {   //define un componente funcional de React llamado "About".
+const About = () => {   
   return (
-    <div className={styles.aboutContainer}> {/*elemento div se le asigna la clase CSS del objeto styles */}
-      <h2 className={styles.title}>Mi Perfil</h2> {/*elemento encabezado (h2) con la clase CSS title del objeto styles. */}
-      <p className={styles.description}> {/*párrafo (p) con la clase CSS description del objeto styles */}
-        ¡Hola! Soy Viri U.M. y estoy desarrollando esta aplicación como parte de un proyecto.
+    <div className={styles.aboutContainer}>
+      <h2 className={styles.title}>About Me</h2> 
+      <p className={styles.description}>
+      Hello! I'm Viri. I'm developing this website as part of a school project. 
       </p>
     </div>
   );
 }
 
-export default About //Exporta el componente "About" para ser importado y utilizado en otros lugares de la aplicación.
+export default About 

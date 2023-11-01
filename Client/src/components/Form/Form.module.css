@@ -16,7 +16,10 @@
   .input {
     width: 80%;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
   }
   
   .error {
@@ -31,7 +34,10 @@
     background-color: #00ff00;
     color: white;
     border: none;
+    border-radius: 10px;
+  
     cursor: pointer;
+  
   }
   
   .button:hover {
