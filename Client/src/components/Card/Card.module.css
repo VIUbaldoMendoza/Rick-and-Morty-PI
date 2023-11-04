@@ -1,6 +1,6 @@
 .cardContainer {  
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 15px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -8,59 +8,33 @@
   position: relative;
   color: black;
   text-align: center;
-  border: 5px solid transparent;
-  background-clip: padding-box;
-  animation: gradient-animation 3s infinite;
-  border-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff) 1;
-  border-image-slice: 1;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #00ff00, -5px -5px #ffffff;
+  
 
-}
-
-@keyframes gradient-animation {
-  0% {
-    border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
-  }
-  25% {
-    border-image-source: linear-gradient(135deg, #ff00ff, #00ffff, #ffff00);
-  }
-  50% {
-    border-image-source: linear-gradient(225deg, #00ffff, #ff00ff, #ffff00);
-  }
-  75% {
-    border-image-source: linear-gradient(315deg, #ffff00, #ff00ff, #00ffff);
-  }
-  100% {
-    border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
-  }
-}
-
-.cardNameLink {
-  text-decoration: none;
-  color: #ff00ff;
-}
-.cardNameLink:hover {
-  color: #00ff00;
 }
 
 /*Estilos para el botón de cierre ("X")*/
 .closeButton {
-  background-color: #00ff00;
-  color: #ff00ff;
+  background-color: white;
+  color: #00ff00;
+  font-size: 20px;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  margin-bottom: 5px;
-  border-radius: 50%; 
+  border-radius: 10%; 
   position: absolute;
-  top: -10px; 
-  right: -10px;
+  top: 20px; 
+  right: 20px;
+  box-shadow: 0px 0px 10px #00ff00 ;
   
 }
 
 .closeButton:hover {
-  border: 2px solid #00ff00;
-  background-color: #ff00ff;
-  color: #00ff00;
+  border: none;
+  background-color: white;
+  color: #ff00ff;
+  box-shadow: 0px 0px 10px #ff00ff;
 }
 
 /*Estilos para el contenedor de información del personaje*/
@@ -83,17 +57,33 @@
 /* Card.module.css */
 
 .favoriteButton {
-  background-color: #ff00ff;
-  color: white;
-  border-radius: 50%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  top: 20px;
   border: none;
   cursor: pointer;
   font-size: 20px;
   margin-bottom: 10px;
+  box-shadow: 0px 0px 10px #00ff00;
 }
 
+
 .favoriteButton:hover {
-  background-color: #00ff00;
-  color: black;
+  color: #ff00ff;
+  box-shadow: 0px 0px 10px #ff00ff;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
