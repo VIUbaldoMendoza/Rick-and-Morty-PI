@@ -7,6 +7,10 @@ const postUser = async( req, res) => {
             return res.status(400).send('Faltan datos')
         }
 
+        //cambiar hoy 16-11
+        //const [user, created] = await User.findOrCreate
+        // where: { email }
+
         const user = await User.findOrCreate({
             where: { email: email, password: password }
         });
